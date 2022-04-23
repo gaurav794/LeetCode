@@ -10,14 +10,8 @@ class Solution {
                 if(outerIndex != innerIndex ){
                 isEqualToTarget = (nums[outerIndex] + nums[innerIndex]) == target;
                 if(isEqualToTarget){
-                    if(outerIndex > innerIndex){
-                    indices[0] = innerIndex;
-                    indices[1] = outerIndex;
-                    }
-                    else{
-                      indices[0] = outerIndex;
+                    indices[0] = outerIndex;
                     indices[1] = innerIndex;  
-                    }
                     break;
                 }
             }
