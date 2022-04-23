@@ -6,8 +6,6 @@ class Solution {
         double median = 0;
         //sort the array
         Arrays.sort(nums);
-        //ternary operator
-        System.out.println(numsLength);
         if(numsLength % 2 == 0){
         median = (double)((nums[numsLength/2] + nums[(numsLength/2) -1]))/ (double)2;
         }
