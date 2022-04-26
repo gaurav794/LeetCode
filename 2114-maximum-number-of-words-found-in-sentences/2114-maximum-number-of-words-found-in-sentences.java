@@ -6,10 +6,9 @@ class Solution {
         for(int index=0;index < sentences.length;index++)
         {
             // split works as an array so use length
-           int tempNoOfWords = sentences[index].split(" ").length;
-           if(tempNoOfWords > noOfWords)
+           if((sentences[index].split(" ").length) > noOfWords)
            {
-               noOfWords = tempNoOfWords;
+               noOfWords = (sentences[index].split(" ").length);
            }
            
         }
