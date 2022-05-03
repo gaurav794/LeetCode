@@ -6,13 +6,14 @@ class Solution {
         
         for(int index=0;index<candies.length;index++)
         {
-            if((candies[index]+extraCandies) >= maxCandies)
-            {
-                result.add(true);
-            }
-            else{
-                result.add(false);
-            }
+            // if((candies[index]+extraCandies) >= maxCandies)
+            // {
+            //     result.add(true);
+            // }
+            // else{
+            //     result.add(false);
+            // }
+            result.add((candies[index]+extraCandies) >= maxCandies);
         }
         
         return result;
