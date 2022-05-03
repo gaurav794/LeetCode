@@ -8,10 +8,11 @@ class Solution {
             for(int j=0; j < nums.length; j++)
             {
                 //To skip self-comparision
-                if((nums[i] == nums[j] && (i < j)))
-                {
-                    numOfGoodPairs++;
-                }
+                // if((nums[i] == nums[j] && (i < j)))
+                // {
+                //     numOfGoodPairs++;
+                // }
+                numOfGoodPairs = ((nums[i] == nums[j] && (i < j))) ? (numOfGoodPairs+1): numOfGoodPairs;
                 
             }
             
