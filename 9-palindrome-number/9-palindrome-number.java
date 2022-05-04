@@ -3,6 +3,6 @@ class Solution {
     {
         if(x < 0) return false;
         
-        return Long.parseLong((new StringBuilder(Long.toString(x)).reverse()).toString()) == x;
+        return Long.parseLong((new StringBuilder(String.valueOf(x)).reverse()).toString()) == x;
     }
 }
