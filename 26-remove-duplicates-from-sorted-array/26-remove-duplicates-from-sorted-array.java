@@ -13,7 +13,8 @@ class Solution {
         {
             if(nums[index] > nums[index-1])
             {
-                nums[k++]= nums[index];
+                nums[k]= nums[index];
+                k++;
             }
         }
         return k;
