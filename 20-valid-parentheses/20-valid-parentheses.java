@@ -19,6 +19,7 @@ class Solution {
             switch(currentChar)
             {
                 case '(','[','{' -> parentheses.push(currentChar);
+                //If stack is already empty means "]" example then put conditionfalse
                 case ')' -> {if(!parentheses.empty() && parentheses.peek() == '(') parentheses.pop();
                              else condition = false;}
                 case ']' -> {if(!parentheses.empty() && parentheses.peek() == '[') parentheses.pop();
