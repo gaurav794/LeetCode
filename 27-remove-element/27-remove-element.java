@@ -12,7 +12,7 @@ class Solution {
                k++;
             }
         }
-        nums = Arrays.copyOfRange(nums,0,k);
+       nums = Arrays.copyOfRange(nums,0,k);
         return k;
     }
 }
