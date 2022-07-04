@@ -1,2 +1,2 @@
 # LeetCode
-Here my solutions to the problems which I have solved on LeetCode platform.
+Here are my solutions to the problems on the LeetCode platform.
