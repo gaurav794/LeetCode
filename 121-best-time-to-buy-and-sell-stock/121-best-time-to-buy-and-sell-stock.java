@@ -6,7 +6,7 @@ class Solution {
          from minimum stock price index onwards find the maximum value
          and return the difference of minimum and maximum stock price
         */
-        if(prices.length < 2) return 0;
+        // if(prices.length < 2) return 0;
 
         int min = Integer.MAX_VALUE;
         int max = 0;
