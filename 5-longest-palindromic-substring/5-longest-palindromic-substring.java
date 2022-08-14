@@ -1,4 +1,6 @@
 class Solution {
+    
+    //O(n^2)
     public static String longestPalindrome(String s) 
     {
         String max = "";
@@ -8,13 +10,13 @@ class Solution {
 
         if(s.equals(new StringBuilder(s).reverse().toString()))
                 return s;
-        
-        for(int i=0;i<len/2;i++)
+        //O(n^2)
+        for(int i=0;i<len/2;i++)//O(n)
         {                    
             char ch =s.charAt(i);
             str += ch;
             //palindrome check
-            max = str.length() > max.length() && isPalindrome(str) ? str : max;
+            max = str.length() > max.length() && isPalindrome(str) ? str : max; //O(n)
 
             if(i == (s.length()-1))
             {
@@ -24,7 +26,7 @@ class Solution {
             }
             
         }
-        
+        //O(n^2)
         for(int i=len/2;i<len;i++)
         {                    
             char ch =s.charAt(i);
