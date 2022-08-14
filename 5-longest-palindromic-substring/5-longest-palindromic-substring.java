@@ -14,7 +14,7 @@ class Solution {
             char ch =s.charAt(i);
             str += ch;
             //palindrome check
-            max = isPalindrome(str) && str.length() > max.length() ? str : max;
+            max = str.length() > max.length() && isPalindrome(str) ? str : max;
 
             if(i == (s.length()-1))
             {
@@ -30,7 +30,7 @@ class Solution {
             char ch =s.charAt(i);
             str += ch;
             //palindrome check
-            max = isPalindrome(str) && str.length() > max.length() ? str : max;
+             max = str.length() > max.length() && isPalindrome(str) ? str : max;
 
             if(i == (s.length()-1))
             {
