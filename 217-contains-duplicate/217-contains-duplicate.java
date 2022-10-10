@@ -34,11 +34,11 @@ class Solution {
         
         for(int i=0;i<nums.length;i++)
         {
-            if(kp.getOrDefault(nums[i],0) == 0)
-                kp.put(nums[i],1);
+            if(kp.containsKey(nums[i]))
+                 return true;
             else
             {
-                return true;
+               kp.put(nums[i],1);
             }
             
         }
