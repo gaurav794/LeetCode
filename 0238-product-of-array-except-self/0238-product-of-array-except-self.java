@@ -1,4 +1,14 @@
 class Solution {
+    
+    /*TIME COMPLEXIY ---> O(N)
+    
+        O(N)+O(N) = O(2N) WHICH EQUALS TO O(N)
+       
+    SPACE COMPLEXITY ---> O(1)
+    
+        SINGLE ARRAY IS USED FOR OPERATIONS
+    */
+    
     public int[] productExceptSelf(int[] nums) 
     {
         //flag
@@ -14,7 +24,7 @@ class Solution {
         int runningProduct = 1;
 
         // Left Pass
-        
+        // O(N)
         for(int i=0;i<len;i++)
         {            
             arr[i] = runningProduct;
@@ -26,7 +36,7 @@ class Solution {
         runningProduct = 1;
         
         // Right Pass
-        
+        //O(N)
         for(int i=len-1;i>=0;i--)
         {            
             //left Pass value * running Product
