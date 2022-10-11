@@ -4,9 +4,9 @@ class Solution {
     
         O(N)+O(N) = O(2N) WHICH EQUALS TO O(N)
        
-    SPACE COMPLEXITY ---> O(1)
+    SPACE COMPLEXITY ---> O(N)
     
-        SINGLE ARRAY IS USED FOR OPERATIONS
+        THREE ARRAY ARE USED FOR OPERATIONS
     */
     
     public int[] productExceptSelf(int[] nums) 
